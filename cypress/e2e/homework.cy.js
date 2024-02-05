@@ -21,7 +21,7 @@ testData.forEach(testData => {
     cy.get(testData.fieldSelector).type(`${testData.inputValue}`);
     cy.get(testData.fieldSelector1).type(`${testData.inputValue1}`);
     cy.get('nb-card:contains("Basic form") .custom-checkbox').click();
-    cy.get('nb-card:contains("Basic form") .appearance-filled size-medium shape-rectangle status-danger nb-transition').click();
+    cy.get('nb-card:contains("Basic form") button').click();
   })
 })
 
